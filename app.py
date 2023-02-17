@@ -10,7 +10,7 @@ def webhook():
 #Microsoft Teams Webhook URL to the Alerts Channel
  teams_webhook = 'https://'
 
-#Recieving the Webhook from DNAC grabbing the relevant information from the details section of the alert sent
+# Receiving the Webhook from DNAC grabbing the relevant information from the details section of the alert sent
  if request.method == 'POST':
   json_webhook = request.json
 
@@ -24,4 +24,5 @@ def webhook():
   print(payload)
   return "Webhook received!"
  
+#Sping up the Flask instance using ssl 
 app.run(host='0.0.0.0', port=8000, ssl_context='adhoc')
