@@ -14,7 +14,7 @@ def webhook():
  if request.method == 'POST':
   json_webhook = request.json
 
-# Parse the details section of the alert payload sent by DNAC, put each key\value into pre_payload, add new lines so it looks pretty on the MS Teams channel
+# Parse the details section of the alert payload sent by DNAC, put each key\value of that section into pre_payload, add new lines so it looks pretty on the MS Teams channel
   pre_payload = "\\\n ".join(key +': ' + value.capitalize() for key,value in json_webhook['details'].items())
  
 # Create a payload with the JSON object "Text": and the value of the pre_payload as a string.
