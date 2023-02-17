@@ -5,4 +5,4 @@ Microsoft Teams Webhooks use a particular JSON structure before it'll accept a w
 
 This is a simple script that utilises python flask to receive a Cisco DNA Centre webhook, convert it into something Microsoft Teams will accept for it to appear in your webhook alerts channel.  Basically a middleware server/webhook proxy
 
-Hope this helps fellow engineers out pulling their hair out, trying to get better visiblity from their DNA Center 
+Hope this helps fellow engineers out pulling their hair trying to get better visiblity from their DNA Center 
