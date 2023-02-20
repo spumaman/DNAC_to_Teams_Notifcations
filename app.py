@@ -30,5 +30,6 @@ def webhook():
 # print(payload)
 
   return "Webhook received!"
- 
+
+#Spin up the Flask instance using ssl adhoc (only use adhoc for testing, never use in a production environment) 
 app.run(host='0.0.0.0', port=8000, ssl_context='adhoc')
